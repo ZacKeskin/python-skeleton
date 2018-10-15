@@ -3,6 +3,15 @@
 import numpy as np
 
 def question05(allowedAllocations, totalValue):
-  # modify and then return the variable below
-  answer = -1
-  return answer
+
+    # Extremely basic, quotient of the largest
+    M = max(test)
+    
+    answer = totalValue // M
+
+    if totalValue == M:
+        return 1
+    elif answer == 1:
+        return 2
+    else:
+        return answer
